@@ -53,7 +53,7 @@
 					<?php echo $genre->Genre; ?>
 				</td>
 				<td>
-					<a href="tracks.php?genre=<?php echo $genre->Genre; ?>">View Tracks</a>
+					<a href="tracks.php?genre=<?php echo urlencode($genre->Genre); ?>">View Tracks</a>
 				</td>
 			</tr>
 		<?php endforeach; ?>
